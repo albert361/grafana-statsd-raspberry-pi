@@ -1,0 +1,1 @@
+docker run -p 8083:8083 -p 8086:8086 -p 8125:8125/udp -p 8126:8126 -p 3000:3000 -v $(pwd)/data/influxdb/lib:/var/lib/influxdb -v $(pwd)/data/influxdb/log:/var/log/influxdb -v $(pwd)/data/grafana:/opt/grafana rpi/statsd-grafana
